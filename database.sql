@@ -31,6 +31,7 @@ CREATE TABLE courses (
     description TEXT,
     theme VARCHAR(100),
     duration INT NOT NULL, -- durée en minutes
+    image_url VARCHAR(255), -- <-- Ajoutez cette ligne
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
@@ -113,4 +114,4 @@ INSERT INTO departments (name, description) VALUES
 
 -- Insertion d'un administrateur par défaut (mot de passe: admin123)
 INSERT INTO users (firstname, lastname, email, password, role) VALUES
-('Admin', 'System', 'admin@example.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin'); 
+('Admin', 'System', 'admin@example.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin');
