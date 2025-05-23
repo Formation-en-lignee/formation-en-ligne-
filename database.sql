@@ -31,7 +31,7 @@ CREATE TABLE courses (
     description TEXT,
     theme VARCHAR(100),
     duration INT NOT NULL, -- durée en minutes
-    image_url VARCHAR(255), -- <-- Ajoutez cette ligne
+    image_url VARCHAR(255), -- ajout de la colonne image_url
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
